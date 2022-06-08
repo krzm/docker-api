@@ -1,3 +1,21 @@
-To Build docker image with Dockerfile and .dockerignore:
-
+# To Build docker image with Dockerfile and .dockerignore
 docker --version
+# cd AppFolder
+docker build -t kmazanek/dockerapi .
+# list images
+docker images
+# alse docker VSCode extension has imgages list
+# run container, -p maps local port to container port in Dockerfile
+docker run -p 8080:80 kmazanek/dockerapi
+# test in browser
+http://localhost:8080/WeatherForecast
+# this was how to run your api in localhost docker container
+# show list of running containers
+docker ps
+# docker stop <CONTAINER ID>
+# extension can stop container also
+# now to deploy image to dockerhub
+# login to dockerhub webpage for later check
+# push image
+docker push kmazanek/dockerapi
+# Explore page has many images of popular software
