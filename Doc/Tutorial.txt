@@ -1,0 +1,3 @@
+To Build docker image with Dockerfile and .dockerignore:
+
+docker --version
